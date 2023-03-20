@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <main class="container">
+        <section id="calc-container">
+            <h1>Calculadora IMC</h1>
+            <form>
+                <div id="form-controls">
+                    <label for="weight">Peso (kg):</label>
+                    <input type="text" id="weight" name="weight" placeholder="Exemplo 90.5">
+                </div>
+                <div id="form-controls">
+                    <label for="height">Altura (m):</label>
+                    <input type="text" id="height" name="height" placeholder="Exemplo 1.75">
+                </div>
+                <span class="error"></span>
+                
+                <button>Calcular</button>
+            </form>
+        </section>
+        <section id="result">
+            <h2>Seu resultado:</h2>
+            <p>Seu imc é: <span id="imc"></span></p>
+            <p>Seu classificação é: <span id="classification"></span></p>
+            <button onclick="back()">Voltar</button>
+        </section>
+    </main>
+
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>
